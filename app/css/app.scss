@@ -166,4 +166,10 @@ a {
 		font-family: 'delicious';
 		margin-bottom:10px;
 	}
+	.home-button {
+		background:url('../#{img}/button.png') repeat-x;
+		height: 54px;
+		width:50px;
+		margin: 10px;
+	}
 }

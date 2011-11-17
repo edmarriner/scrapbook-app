@@ -8,16 +8,21 @@ window.onload = function(){
     var docWidth;
 
     // Set hammer.js tap event to open the menu
-    $(doc.getElementById('header-menu-button')).hammer().bind("tap", openMenu);
+    $(doc.getElementById('header-menu-button')).tap(openMenu);
 
     // Set tap to close the menu
-    $(pageBlock).hammer().bind("tap", closeMenu);
-    
+    $(pageBlock).tap(closeMenu);
+
     // Set swipe left on menu to close the menu
-    $(menu).hammer().bind("swipe", function(ev){
-        if(ev.direction === "left"){
-            closeMenu();
-        }
+    $(menu).swipeleft(closeMenu);
+
+    // move books to the left
+    $(page).on("swipeleft", '#book-block', function(){
+        alert("left")
+    });
+    // move books to the right
+    $(page).on("swiperight", '#book-block', function(){
+        alert("right")
     });
 
     // Close the menu

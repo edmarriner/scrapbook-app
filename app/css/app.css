@@ -146,3 +146,8 @@ a {
   color: #ccc;
   font-family: 'delicious';
   margin-bottom: 10px; }
+.home .home-button {
+  background: url("../img/button.png") repeat-x;
+  height: 54px;
+  width: 50px;
+  margin: 10px; }
