@@ -7,20 +7,17 @@ window.onload = function(){
     var pageBlock	=	doc.getElementById('page-block');
     var docWidth;
 
-    // Set click event to open the menu
-	doc.getElementById('header-menu-button').addEventListener('click', toggleMenu, false);
-    
-    // Set click event to open the menu
-	pageBlock.addEventListener('click', closeMenu, false);
+    // Set hammer.js tap event to open the menu
+    var menuButtonEvents = new Hammer(doc.getElementById('header-menu-button'));
+	menuButtonEvents.ontap = openMenu;
 
-	// Function to open the menu
-	function toggleMenu() {
-		if(hasClass(menu,'open')){
-			closeMenu();
-		}else{
-			openMenu();
-		}
-    }
+    // Set tap event to open the menu
+    var pageBlockEvents = new Hammer(pageBlock);
+	pageBlockEvents.ontap = closeMenu;
+
+	// Set swipe event to close the menu
+    var menuEvents = new Hammer(menu);
+	menuEvents.onswipe = closeMenu;
 
     // Close the menu
     function closeMenu() {
