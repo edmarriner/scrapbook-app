@@ -1,1 +1,12 @@
-Home
+<div class='home'>
+	<div class='book-block' id='book-block'></div>
+	<div class='book-swipe' id='book-swipe'>
+		<div class='books' id='books'>
+			<div class='book' id='book' ng-repeat="book in books">
+			<h1>{{book.title}}</h1>
+			<h5>{{book.author}}</h5>
+			<img src='img/{{book.img}}'/>
+			</div>
+		</div>
+	</div>
+</div>

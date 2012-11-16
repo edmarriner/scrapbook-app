@@ -28,7 +28,8 @@ table {
 
 body {
   font-family: sans-serif;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none; }
 
 a {
   text-decoration: none; }
@@ -117,3 +118,31 @@ a {
 .content {
   color: #fff;
   padding: 10px; }
+
+.home .book-block {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  left: 0;
+  border: 1px dashed red;
+  height: 300px;
+  z-index: 999; }
+.home .book-swipe {
+  height: 100%;
+  width: 220px;
+  overflow: hidden; }
+.home .books {
+  width: 800px; }
+.home .book {
+  margin-right: 10px;
+  float: left; }
+.home h1 {
+  font-size: 25px;
+  color: #fff;
+  font-family: 'delicious';
+  text-transform: uppercase; }
+.home h5 {
+  font-size: 10px;
+  color: #ccc;
+  font-family: 'delicious';
+  margin-bottom: 10px; }

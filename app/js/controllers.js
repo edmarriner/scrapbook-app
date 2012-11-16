@@ -1,29 +1,40 @@
 'use strict';
 
-/* Controllers */
-function homeCtrl() {}
-homeCtrl.$inject = [];
-
-function allCtrl() {
+// Home screen controller
+function HomeController($scope) {
+	$scope.books = [
+		{"title": "My first holiday", "img": "book1.png", "author": "Edward Marriner"},
+		{"title": "Graduation", "img": "book1.png", "author": "Edward Marriner"}
+	];
 }
-allCtrl.$inject = [];
+HomeController.$inject = ['$scope'];
 
-function newCtrl() {
+// List all the books contoller
+function AllBooksController() {
 }
-newCtrl.$inject = [];
+AllBooksController.$inject = [];
 
-function profileCtrl() {
+// New book controller
+function NewBookController() {
 }
-profileCtrl.$inject = [];
+NewBookController.$inject = [];
 
-function friendsCtrl() {
+// profile controller
+function MyProfileController() {
 }
-friendsCtrl.$inject = [];
+MyProfileController.$inject = [];
 
-function settingsCtrl() {
+// freinds controller
+function FriendsController() {
 }
-settingsCtrl.$inject = [];
+FriendsController.$inject = [];
 
-function aboutCtrl() {
+// settings controller
+function SettingsController() {
 }
-aboutCtrl.$inject = [];
+SettingsController.$inject = [];
+
+// about screen controller
+function AboutController() {
+}
+AboutController.$inject = [];

@@ -21,20 +21,17 @@
       <div id='page-block' class='page-block' ng-click='closeMenu()'></div>
       <div class="header">
         <a href='#' class="logo">Scrapbook</a>
-        <a id='header-menu-button' class='header-buttons header-menu-button' ng-click=alert('test')></a>
+        <a id='header-menu-button' class='header-buttons header-menu-button' hm-tap="closeMenu"></a>
         <a href='#' id='header-add-button' class='header-buttons header-add-button'></a>
       </div>
-      <div class="content">
-         <div ng-view></div>
-      </div>  
+      <div class="content" ng-view></div>  
     </div>
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
   -->
   <script src="lib/angular/angular.js"></script>
   <script src="lib/jquery.1.8.2.min.js"></script>
-  <script src="lib/hammer.js"></script>
-  <script src="lib/jquery.hammer.js"></script>
+  <script src="lib/mobile.events.jquery.js"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
