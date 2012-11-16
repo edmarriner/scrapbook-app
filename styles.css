@@ -27,10 +27,17 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  -webkit-font-smoothing: antialiased; }
 
 a {
   text-decoration: none; }
+
+@font-face {
+  font-family: 'delicious';
+  src: url("fonts/delicious-heavy-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 
 .menu {
   position: fixed;
@@ -80,12 +87,12 @@ a {
   background: #f2f2f2;
   border-bottom: #fff;
   box-sizing: border-box;
-  padding: 5px; }
+  padding: 5px;
+  text-align: center; }
   .header .header-buttons {
     display: block;
     width: 30px;
-    height: 30px;
-    margin-top: -30px; }
+    height: 30px; }
   .header .header-menu-button {
     background: url("images/sprite.png") 4px 7px no-repeat;
     float: left; }
@@ -93,11 +100,10 @@ a {
     background: url("images/sprite.png") 4px -20px no-repeat;
     float: right; }
   .header .logo {
-    background: url("images/sprite.png") 4px -50px no-repeat;
-    width: 100px;
-    height: 30px;
-    display: block;
-    margin: 0 auto; }
+    font-family: 'delicious';
+    text-transform: uppercase;
+    color: #cc161d;
+    font-size: 25px; }
 
 .content {
   color: #fff;

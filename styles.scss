@@ -9,9 +9,18 @@ $img: "images";
 // Global styles
 body {
 	font-family: sans-serif;
+	-webkit-font-smoothing: antialiased;
 }
 a {
 	text-decoration:none;
+}
+
+// Fonts
+@font-face {
+    font-family: 'delicious';
+    src: url('fonts/delicious-heavy-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 
@@ -74,12 +83,12 @@ a {
 	border-bottom:#fff;
 	box-sizing: border-box;
 	padding: 5px;
+	text-align:center;
 	.header-buttons
 	{
 		display: block;
 		width:30px;
 		height: 30px;
-		margin-top:-30px;
 	}
 	.header-menu-button{
 		background:url('#{$img}/sprite.png') 4px 7px no-repeat;
@@ -90,11 +99,10 @@ a {
 		float: right;
 	}
 	.logo {
-		background:url('#{$img}/sprite.png') 4px -50px no-repeat;
-		width: 100px;
-		height: 30px;
-		display: block;
-		margin: 0 auto;
+		font-family: 'delicious';
+		text-transform: uppercase;
+		color:#cc161d;
+		font-size: 25px;
 	}
 
 }
