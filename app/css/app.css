@@ -35,7 +35,7 @@ a {
 
 @font-face {
   font-family: 'delicious';
-  src: url("fonts/delicious-heavy-webfont.ttf") format("truetype");
+  src: url("../fonts/delicious-heavy-webfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
@@ -71,8 +71,8 @@ a {
       height: 30px; }
 
 .page {
-  background: url("images/bg.png");
-  height: 100%;
+  background: url("../img/bg.png");
+  height: 700px;
   width: 100%;
   position: relative;
   z-index: 999;
@@ -103,10 +103,10 @@ a {
     width: 30px;
     height: 30px; }
   .header .header-menu-button {
-    background: url("images/sprite.png") 4px 7px no-repeat;
+    background: url("../img/sprite.png") 4px 7px no-repeat;
     float: left; }
   .header .header-add-button {
-    background: url("images/sprite.png") 4px -20px no-repeat;
+    background: url("../img/sprite.png") 4px -20px no-repeat;
     float: right; }
   .header .logo {
     font-family: 'delicious';

@@ -4,7 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /////// APP STYLES ////////
 
 // Global vars
-$img: "images";
+$img: "../img";
 
 // Global styles
 body {
@@ -18,7 +18,7 @@ a {
 // Fonts
 @font-face {
     font-family: 'delicious';
-    src: url('fonts/delicious-heavy-webfont.ttf') format('truetype');
+    src: url('../fonts/delicious-heavy-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -67,7 +67,7 @@ a {
 // Page Styles
 .page{
 	background: url('#{$img}/bg.png');
-	height:100%;
+	height:700px;
 	width:100%;
 	position: relative;
 	z-index:999;
@@ -109,6 +109,7 @@ a {
 	.header-add-button{
 		background:url('#{$img}/sprite.png') 4px -20px no-repeat;
 		float: right;
+		
 	}
 	.logo {
 		font-family: 'delicious';
